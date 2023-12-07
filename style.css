@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: linear-gradient(to right, #ee9ca7, #ffdde1); */
+    background-color: #FFF5E0;
+}
+
+header {
+    min-height: 40px;
+    background-color: #BA1D1D;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #ee9ca7;
+}
+
+.logo {
+    color: white;
+    padding: 20px 0;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1030px) {
+    .hamburger {
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        position: absolute;
+        top: 70px;
+        right: 70px;
+    }
+
+
+    nav li {
+        display: none;
+        border-top: 1px solid white;
+    }
+
+    nav ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .wrap-logo {
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+}
+
+.active {
+    display: block;
+}
+
+
+/* MAIN STARTS */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.welcome {
+    background-color: #BA1D1D;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 2em;
+}
+
+.normal-text {
+    color: #4F0000;
+    font-size: 1.5em;
+}
+
+.spaces {
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.5em;
+    margin-right: 20px;
+    font-weight: 800;
+}
+
+.right a:hover {
+    color: #ee9ca7;
+    opacity: 0.8;
+}
+
+.marketplace {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.shopee img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.shopee {
+    background: #BA1D1D;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.tokped img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.tokped {
+    background: #BA1D1D;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+@media (max-width: 1030px) {
+    .container {
+        flex-direction: column
+    }
+
+    .left-img {
+        scale: 0.7;
+        margin-top: -70px;
+        margin-bottom: -70px;
+    }
+
+    .right {
+        margin: auto;
+        text-align: center;
+    }
+
+    .welcome {
+        width: 100%;
+    }
+
+    .marketplace {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome {
+        width: 60%;
+        font-size: 1.25em;
+    }
+
+    .left-img {
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+
+    .normal-text {
+        font-size: 1.1em;
+    }
+
+    .right a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 444px) {
+    .logo {
+        font-size: 1em;
+    }
+}
+
+#hero {
+    margin-bottom: 10%;
+}
+
+/* KEUNGGULAN STARTS */
+
+.sub-title {
+    background-color: #BA1D1D;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.wrapper-keunggulan {
+    display: flex;
+
+}
+
+#keunggulan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.card-keunggulan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.symbol {
+    margin-bottom: 20px;
+}
+
+.symbol:hover {
+    color: #BA1D1D;
+}
+
+.description {
+    color: #4F0000;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1030px) {
+    .wrapper-keunggulan {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .sub-title {
+        font-size: 1.25em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+}
+
+/* TAMPILAN STARTS */
+#tampilan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper-tampilan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-tampilan img {
+    height: 300px;
+}
+
+.card-tampilan {
+    border: 2px solid #4F0000;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+    height: 310px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px black;
+    position: relative;
+}
+
+.img-text {
+    width: 300px;
+    height: 310px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    font-size: 2em;
+    color: white;
+    padding: 139px 0;
+    text-align: center;
+    visibility: hidden;
+
+}
+
+.card-tampilan:hover {
+    cursor: pointer;
+}
+
+.card-tampilan:hover .img-text {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+.card-tampilan:hover .img-tampilan {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.tampilan-text {
+    text-align: center;
+}
+
+@media(max-width: 1030px) {
+    .wrapper-tampilan {
+        flex-direction: column;
+    }
+}
+
+#tampilan {
+    margin-bottom: 40px;
+}
+
+/* REVIEW PRODUK STARTS */
+
+.wrapper-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /*because 10 imgs*/
+    column-gap: 2rem;
+    pointer-events: none;
+}
+
+.card-slider {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-slider img {
+    flex-basis: 150px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.card-slider span {
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+
+.relative {
+    position: relative;
+    margin-top: 250px;
+}
+
+#review {
+    margin-top: 80px;
+    margin-bottom: 500px;
+}
+
+.review-sub {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+
+}
+
+@media(max-width: 444px) {
+    .review-sub {
+        width: 250px;
+    }
+}
+
+/* TENTANG PENULIS STARTS */
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 600px;
+}
+
+.card-tentang {
+    display: flex;
+    justify-content: space-evenly;
+    color: #BA1D1D;
+    background-color: white;
+    border: 2px solid #4F0000;
+    border-radius: 15px;
+    /* position: relative; */
+    padding: 40px;
+    text-align: justify;
+    /* padding-left: 80px; */
+
+}
+
+.card-tentang img {
+    border-radius: 15px;
+    border: 2px solid #4F0000;
+    align-self: center;
+    flex-basis: 150px;
+}
+
+.card-tentang span {
+    margin-left: 40px;
+    font-weight: 500;
+    text-align: left;
+}
+
+@media(max-width: 768px) {
+    .card-tentang span {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 444px) {
+    .card-tentang span {
+        font-size: 0.8em;
+    }
+
+    .card-tentang {
+        padding: 20px;
+    }
+}
+
+/* FOOTER STARTS */
+.social-media a {
+    color: #4F0000;
+    font-size: 40px;
+    margin: 40px 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ee9ca7;
+}
+
+footer {
+    margin-top: 80px;
+    height: 120px;
+    background-color: #BA1D1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.5em;
+}
+
+@media (max-width: 444px) {
+    footer h4 {
+        font-size: 1em;
+    }
+}
